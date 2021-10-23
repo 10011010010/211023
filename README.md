@@ -31,7 +31,9 @@
 - Back End Develop : 데이터 처리, 보안 개발
 
 > 웹 개발 Front End
-- browser 에서 표시되는 UI/UX 요소를 개발
+- browser에서 표시되는 UI/UX 요소를 개발
+- browser에서 HTML/CSS/Javascript 렌더링해서 표시
+- 소스코드 처리 : 서버에서 HTML/CSS/Javascript 파일을 전송
 
 > 프로그래밍 언어 번역 과정
 - compile : ex) 통번역
