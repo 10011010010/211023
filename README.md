@@ -17,4 +17,6 @@
 
 > S/W
 - Client : 사용자가 사용하는 디바이스에서 실행되고있는 S/W
-- Server : 서버 컴퓨터에서 실행되고 있는 S/W
+- Server : 서버 컴퓨터에서 실행되고 있는 S/W  
+  - 리눅스 OS - apache 
+  - 윈도우 OS - IIS
