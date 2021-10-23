@@ -24,3 +24,8 @@
 
 > Front End Develop
 - Front End : 사용자가 모니터/화면을 통해서 볼 수 있는 영역
+- Front End Develop : UX/UI 요소 개발
+
+> Back End Develop
+- Back End : 사용자가 확인할 수 없는 영역
+- Back End Develop : 데이터 처리, 보안 개발
