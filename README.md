@@ -17,6 +17,10 @@
 
 > S/W
 - Client : 사용자가 사용하는 디바이스에서 실행되고있는 S/W
+  - 웹 개발에서 Client : Browser
 - Server : 서버 컴퓨터에서 실행되고 있는 S/W  
   - 리눅스 OS - apache 
   - 윈도우 OS - IIS
+
+> Front End Develop
+- Front End : 사용자가 모니터/화면을 통해서 볼 수 있는 영역
