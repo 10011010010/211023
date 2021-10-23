@@ -96,3 +96,10 @@ https://www.w3schools.com/html/html_paragraphs.asp
 ### HTML link
 
 https://www.w3schools.com/html/html_links.asp
+
+- 다른 페이지로 연결
+- a : (a)nchor
+
+```
+<a href="url"> 링크이름 </a>
+```
