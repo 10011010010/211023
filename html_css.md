@@ -291,3 +291,225 @@ https://www.w3schools.com/html/html_head.asp
 <meta charset="UTF-8"> : 문자 세트 지정
 UTF-8 : universal 문자 인코딩 방식 - 영어를 포함한 세계언어를 표시할 수 있음
 ```
+
+# CSS
+
+## CSS Syntax
+
+https://www.w3schools.com/css/css_syntax.asp
+
+```
+h1 {
+  color:red;
+  font-size:12px;
+}
+```
+
+## CSS Selector
+
+https://www.w3schools.com/html/html_id.asp
+https://www.w3schools.com/html/html_classes.asp
+
+### id
+
+- 같은 HTML 페이지에서 고유한 이름으로 사용되어야 함.(한번만 사용되어야 함) => 논리적 개념
+  - id는 프로그래밍 언어에서 변수와 같은 개념
+- 한 HTML 요소에 여러개의 id 이름을 지정할 수 없음
+
+### class
+
+- 같은 HTML 페이지에서 같은 class 이름을 여러번 사용할 수 있음
+- 한 HTML 요소에 여러개의 class 이름을 지정할 수 있음
+
+```
+// HTML
+<p id="paragraph">단락</p>
+<div class="container">콘텐츠</div>
+<div id="para" class="section">구조</div>
+
+// CSS
+- Element 선택자
+p{
+  color:red;
+}
+
+- id 선택자
+#paragraph{
+  color:blue;
+}
+
+- class 선택자
+.container{
+  color:green;
+}
+
+
+
+
+- 선택자 연결 표현
+
+  - 선택자의 자세한 표현
+
+```
+
+  <p id="para" class="sentence"> 단락 </p>
+
+p#para{}
+
+p.sentence{}
+
+#para.sentence{}
+
+```
+
+## CSS 작성방식
+
+- External : 외부 파일
+- Internal : HTML 페이지에 CSS를 작성 - head > style태그를 사용해서 CSS 코드를 작성
+- Inline : HTML 요소에 style attribute를 사용해서 직접 적용
+
+## Color 이론
+
+- 색 혼합 방식
+
+- 가산 혼합 : 빛 혼합
+
+  - 혼합하는 색이 많을수록 밝아짐, 모든 색 혼합 => 흰색
+  - 스크린(화면)
+  - 컬러모드 : R(ed)G(reen)B(lue)
+
+- 감산 혼합 : 잉크 혼합
+  - 혼합하는 색이 많을수록 어두워짐, 모든 색 혼합 => 검정색
+  - 프린터
+  - 컬러모드 : C(yan)M(agenta)Y(ellow)K(black)
+
+- RGB 컬러모드에서 색 표현
+  - 각각의 색 표현 용량 : Red(8bit), Green(8bit), Blue(8bit)
+  - 24bit true color : 약 1700만개 색 표현
+  - 10진수 표현
+    - rgb(red 값(0~255), green 값(0~255), blue 값(0~255) => rgb()
+    - Ex) rgb(100,50,245)
+  - 16진수 표현(0~9, A(10),B(11),C(12),D(13),E(14),F(15))
+    - #R(AA)G(0E)B(FF)
+    - Ex) #3A79BF
+```
+
+> 컴퓨터에서 사용하는 진법(진수) - 2진수(0,1)
+>
+> 용량 단위
+>
+> - bit : 데이터 저장 최소 단위
+>
+>   > 저장 공간 1 칸 : 0, 1 중에 하나를 저장
+>
+> - byte : 1byte = 8bit
+>   > byte < KB < MB < GB < TB
+>
+> 용량 계산
+>
+> - 1byte = 8bit가 저장할 수 있는 데이터의 개수 : (2^8) 256개(0~255)
+
+## CSS 상속
+
+- 조상요소, 부모요소에 적용된 CSS style이 자식요소, 자손요소에 상속되어 적용되는 현상
+- 모든 CSS 속성이 상속되는 것은 아님
+- 모든 HTML Element가 상속되는 것은 아님
+
+```
+<div>
+  <p>단락</p>
+</div>
+
+div{
+  color:red;
+}
+
+* div에 적용한 색이 p에도 상속되어 적용됨
+
+```
+
+## CSS Property(속성)
+
+- HTML Contents Styling
+
+  - Text Contents Styling
+  - Multi media Contents Styling
+
+- HTML Structure Styling
+
+## Text Contents Styling
+
+### CSS Text
+
+https://www.w3schools.com/css/css_text.asp
+
+- color : text color 지정
+
+```
+p{
+
+  color : #4287f5;
+
+}
+```
+
+- text-align : 텍스트 정렬
+
+  - left(default), right, center, justify
+
+- text-decoration : 텍스트 줄
+
+  - overline, line-through, underline, none
+
+- text-indent : 들여쓰기
+
+- letter-spacing : 글자 간격
+
+  - 양수, 음수 사용 가능
+
+- line-height : 줄 높이
+  - 고정값 : px
+  - 배수값 : 소수점 포함, 단위를 포시하지 않음, 글꼴 크게 비례
+
+* white-space : 줄바꿈 설정
+  - wrap
+
+### CSS Font
+
+- font-family : 글꼴 종류
+  - 웹페이지에 지정된 Font 파일을 사용자 PC체 설치된 폰트중에서 찾음
+    - 웹 안전 폰트 : 굴림, 돋움, Arial, Verdana ...
+    - Fallback : 글꼴 대비책
+
+```
+font-family: 굴림, 돋움, sans-serif;
+
+1. 굴림 폰트를 렌더링 시도
+2. 돋움 폰트를 렌더링 시도
+3. sans-serif(브라우저 기본폰트) 폰트를 렌더링
+
+```
+
+- 웹 폰트
+
+  - 폰트 파일을 서버에 업로드해서, 사용자가 웹사이트에 접속했을 때 똑같은 폰트를 적용할 수 있도록 하는 기술
+  - 웹폰트 파일 형식 : eot, woff, woff2
+
+- 웹폰트 서비스
+
+  - google font : 영문, 한글
+  - noonnu font : 하글
+
+- 사용빈도가 높은 폰트
+  - 나눔 바른 고딕
+  - 본고딕(Noto sans) : google + adobe
+
+* font-style
+
+  - italic : 기울임꼴
+
+* font-weight : 굵기
+  - normal, bold
+  - 100 ... 900
+
+- font-size : 크기
