@@ -513,3 +513,28 @@ font-family: 굴림, 돋움, sans-serif;
   - 100 ... 900
 
 - font-size : 크기
+
+### CSS Links
+
+https://www.w3schools.com/css/css_link.asp
+
+- 4가지 상태 구분을 해서 각각 스타일링을 할 수 있다.
+
+### CSS List
+
+https://www.w3schools.com/css/css_list.asp
+
+- 목록에서 자동으로 생성되는 기호, 숫자 제거하고 사용함
+
+### CSS Table
+
+https://www.w3schools.com/css/css_table.asp
+
+- Table 셀 테두리 없애고 사용
+
+## Multi media contents styling
+
+- image
+- video
+
+- 크기 조정, 배치 => Box Styling
