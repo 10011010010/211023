@@ -13,51 +13,75 @@
     />
     <style>
       @font-face {
-        font-family: "국립박물관문화재단클래식L";
-        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/국립박물관문화재단클래식L.woff")
-          format("woff");
+        font-family: "KOTRAHOPE";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/KOTRAHOPE.woff2")
+          format("woff2");
         font-weight: normal;
         font-style: normal;
       }
+
       body {
         font-size: 16px;
         color: #555555;
-        font-family: "국립박물관문화재단클래식L", serif;
+        font-family: "KOTRAHOPE", sans-serif;
       }
       p {
-        font-family: "roboto", sans-serif;
-        color: #d33;
+        color: blueviolet;
         text-align: center;
+        font-family: "Roboto", sans-serif;
       }
       #paragraph {
-        color: #0645ad;
+        color: cornflowerblue;
       }
       .para-link {
-        color: #d33;
+        color: blueviolet;
       }
       .contents-list {
         list-style: none;
+        border: 1px solid grey;
+        width: 300px;
+        padding: 20px;
+        background: #eeeeee;
       }
       .contents-item {
         letter-spacing: 3px;
         line-height: 1.6;
+        margin-bottom: 10px;
       }
       .contents-link {
         color: #555555;
         text-decoration: none;
-        }
+      }
       .contents-link:hover {
         color: hotpink;
         text-decoration: underline;
-        }
       }
       table {
         border-collapse: collapse;
+        width: 500px;
+      }
+      th,
+      td {
+        border-top: 1px solid grey;
+        border-bottom: 1px solid grey;
+        text-align: center;
+        padding: 50px;
+      }
+      img {
+        width: 300px;
+      }
+      video {
+        width: 300px;
+      }
+      iframe {
+        width: 300px;
+        height: 700px;
+        margin: 50px;
       }
     </style>
   </head>
   <body>
-    <!-- HTML element 연습 ctrl+/ -->
+    <!-- HTML element 연습 : ctrl + / -->
     <h1>HTML5</h1>
     <hr />
     <p>
@@ -83,8 +107,9 @@
         href="https://ko.wikipedia.org/wiki/W3C"
         target="_blank"
         >W3C</a
-      >는 2014년 10월 28일 <br />
-      HTML5 표준안을 확정했다고<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;발표했다.
+      >는<br />
+      2014년 10월 28일<br />
+      HTML5 표준안을 확정했다고&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;발표했다.
     </p>
     <p>
       이후 2016년 11월 1일 HTML5의 마이너 업데이트 버전인 HTML5.1 표준안을 확정,
@@ -126,7 +151,7 @@
           <li>
             멀티미디어 요소 - 플러그인 없이 멀티미디어를 재생할 수 있게 한다.
             <ul>
-              <li>audio - 오디오를 재생한다.</li>
+              <li>audio - 오디오를 재생한다</li>
               <li>video - 비디오를 재생한다.</li>
               <li>canvas</li>
             </ul>
@@ -146,9 +171,7 @@
           <li>hr</li>
         </ul>
       </li>
-      <li>
-        문서 선언 - <!DOCTYPE html>으로 간소화 되었다.(대소문자 구별 안함)
-      </li>
+      <li>문서 선언</li>
       <li>
         요소 제거
         <ul>
@@ -167,7 +190,6 @@
         </ul>
       </li>
     </ul>
-
     <h2 id="chapter2">일정 및 역사</h2>
     <hr />
     <ul>
@@ -176,15 +198,13 @@
       <li>2010년 1월 HTML5 Last Call 작업 초안</li>
       <li>2010년 8월 HTML5 Working Draft 공개</li>
     </ul>
-
     <dl>
       <dt>수정된 HTML 5.0 개발 일정</dt>
-      <dd>CR(Candidate Recommendation): 2012년 4분기</dd>
-      <dd>LCf: 2014년 3분기</dd>
-      <dd>PR(Proposed Recommendation): 2014년 4분기</dd>
-      <dd>Rec(Recommendation): 2014년 4분기</dd>
+      <dd>1. CR(Candidate Recommendation): 2012년 4분기</dd>
+      <dd>2. LCf: 2014년 3분기</dd>
+      <dd>3. PR(Proposed Recommendation): 2014년 4분기</dd>
+      <dd>4. Rec(Recommendation): 2014년 4분기</dd>
     </dl>
-
     <dl>
       <dt>HTML5.1 개발 일정</dt>
       <dd>
@@ -196,10 +216,9 @@
         </ol>
       </dd>
     </dl>
-
     <h2 id="chapter3">브라우저 지원 현황</h2>
     <hr />
-    <table border="1">
+    <table>
       <thead>
         <tr>
           <th>a</th>
@@ -220,7 +239,6 @@
         </tr>
       </tbody>
     </table>
-
     <style type="text/css">
       .tg {
         border-collapse: collapse;
@@ -1006,20 +1024,18 @@
       </tbody>
     </table>
 
-    <img src="image.jpg" alt="grey" />
+    <img src="image.jpg" alt="알래스카 빙하 호수 사진" />
     <img
-      src="https://media-exp1.licdn.com/dms/image/C4D1BAQHSZ0IWSvOgyw/company-background_10000/0/1631654956861?e=2159024400&v=beta&t=51wR7ZPd4xOSrOOWSunN6Y8gZ0WYGq20gytAiYkN8fA"
+      src="https://cphoto.asiae.co.kr/listimglink/6/2014062008023740998_1.jpg"
       alt=""
     />
 
-    <video controls autoplay>
+    <video controls autoplay muted loop>
       <source src="mov_bbb.mp4" />
     </video>
 
     <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/v7bnOxV4jAc"
+      src="https://www.youtube.com/embed/sqgxcCjD04s"
       title="YouTube video player"
       frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

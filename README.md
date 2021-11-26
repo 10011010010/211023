@@ -1,3 +1,5 @@
+https://us02web.zoom.us/j/86835532920?pwd=SUE2SSszQ2JXZUZWWFgwTThSckxiZz09
+
 # 참고 사이트 주소
 
 https://github.com/
@@ -34,7 +36,7 @@ https://codesandbox.io/s/html-css-2537y?file=/README.md
 > S/W
 
 - Client : 사용자가 사용하는 디바이스에서 실행되고 있는 S/W
-  - 웹 개발에서 Client : Browser
+  - 웹 개발에서 client : browser
 - Server : 서버 컴퓨터에서 실행되고 있는 S/W
   - 리눅스 OS - apache
   - 윈도우 OS - IIS
@@ -42,7 +44,7 @@ https://codesandbox.io/s/html-css-2537y?file=/README.md
 > Front End Develop
 
 - Front End : 사용자가 모니터/화면을 통해서 볼 수 있는 영역
-- Front End Develop : UX/UI 요소 개발
+- Front End Develop : UI/UX 요소 개발
 
 > Back End Develop
 
@@ -51,12 +53,12 @@ https://codesandbox.io/s/html-css-2537y?file=/README.md
 
 > 웹 개발 Front End
 
-- browser에서 표시되는 UI/UX 요소를 개발
+- browser 에서 표시되는 UI/UX 요소를 개발
 - browser에서 HTML/CSS/Javascript 렌더링해서 표시
 - 소스코드 처리 : 서버에서 HTML/CSS/Javascript 파일을 전송
 
-> 프로그래밍 언어 번역 과정
+> 프로그래밍 언어 번역과정
 
-- compile : ex) 통번역
-- interprete : ex) 동시통역
+- compile : Ex) 통번역
+- interprete : Ex) 동시통역
 - 웹 Front End : Render
